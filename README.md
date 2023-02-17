@@ -24,11 +24,11 @@ Recommended videos for running a container, understanding Dockerfile and docker-
 ```sh
 docker ps
 ```
-Displays all currently running containers and some information about them
+Displays all currently running containers and some information about them such as container ID
 
 ```sh
 docker exec -it "CONTAINER ID" /bin/sh 
 ```
-terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
+Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
 
 
