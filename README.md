@@ -7,7 +7,7 @@ This repository contains some examples of how docker is used and a start of the 
 docker-compose up
 ```
 Builds and starts the react app in a container
-
+> NOTE: Windows users might have to remove/comment the "volumes" line in docker-compose.yaml file 
 # Learning
 Recommended videos for running a container, understanding Dockerfile and docker-compose.yaml
 
