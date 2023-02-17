@@ -3,6 +3,7 @@
 This repository contains some examples of how docker is used and a start of the Docker configuration to be used by the project.
 
 # Running
+Install docker and clone the repo then run the command
 ```sh
 docker-compose up
 ```
