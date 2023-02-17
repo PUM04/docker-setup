@@ -32,3 +32,8 @@ docker exec -it "CONTAINER ID" /bin/sh
 Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
 
 
+```sh
+docker-compose down 
+```
+Removes created containers
+
