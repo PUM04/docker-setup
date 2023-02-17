@@ -35,5 +35,5 @@ Terminal command to enter a container using the "/bin/sh" shell in the linux alp
 ```sh
 docker-compose down 
 ```
-Removes created containers
+Removes containers created with docker-compose up
 
