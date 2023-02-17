@@ -7,7 +7,7 @@ Install docker and clone the repo then run the command
 ```sh
 docker-compose up
 ```
-Builds and starts the react app in a container
+React app can be accessed by entering localhost:3000 in your web browser
 > NOTE: Windows users might have to remove/comment the "volumes" in docker-compose.yaml file 
 # Learning
 Recommended videos for running a container, understanding Dockerfile and docker-compose.yaml
