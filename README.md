@@ -12,12 +12,12 @@ React app can be accessed by entering localhost:3000 in your web browser
 # Learning
 Recommended videos for running a container, understanding Dockerfile and docker-compose.yaml
 
-> WINDOWS USERS: Docker volumes are used for real time updating files in the container, these apparently have problems working with windows. So WSL is recommended for development in windows. Docker volumes are defined in the docker-compose.yaml file. It should work without WSL if you remove the volumes from docker-compose.yaml file but you might have to create a new container for every change to the code.
-
 |Subject| Video|
 |-------|------|
 |Dockerfile|https://www.youtube.com/watch?v=QePBbG5MoKk|
 |Docker compose|https://www.youtube.com/watch?v=TSySwrQcevM|
+
+> WINDOWS USERS: Docker volumes are used for real time updating files in the container, these apparently have problems working with windows. So WSL is recommended for development in windows. Docker volumes are defined in the docker-compose.yaml file. It should work without WSL if you remove the volumes from docker-compose.yaml file but you might have to create a new container for every change to the code.
 
 ## Useful commands
 
