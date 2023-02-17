@@ -2,6 +2,12 @@
 # docker-setup
 This repository contains some examples of how docker is used and a start of the Docker configuration to be used by the project.
 
+## Running
+```sh
+docker-compose up
+```
+Builds and starts the react app in a container
+
 ## Learning
 Recommended videos for running a container, understanding Dockerfile and docker-compose.yaml
 
@@ -11,3 +17,17 @@ Recommended videos for running a container, understanding Dockerfile and docker-
 |-------|------|
 |Dockerfile|https://www.youtube.com/watch?v=QePBbG5MoKk|
 |Docker compose|https://www.youtube.com/watch?v=TSySwrQcevM|
+
+# Useful commands
+
+```sh
+docker ps
+```
+Displays all currently running containers and some information about them
+
+```sh
+docker exec -it "CONTAINER ID" /bin/sh 
+```
+terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
+
+
