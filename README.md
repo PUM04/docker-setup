@@ -38,7 +38,7 @@ docker-compose down
 Removes containers created with docker-compose up
 
 # Troubleshooting
->Linux: Have to run sudo on every docker command
+## Linux: Have to run sudo on every docker command
 
 Create the docker group if it does not exist
 
