@@ -40,7 +40,7 @@ Removes containers created with docker-compose up
 # Troubleshooting
 >Linux: Have to run sudo on every docker command
 
-    Create the docker group if it does not exist
+Create the docker group if it does not exist
 
 ```sh
 $ sudo groupadd docker
@@ -64,7 +64,7 @@ Check if docker can be run without root
 $ docker run hello-world
 ```
 
-    Reboot if still got error
+Reboot if still got error
 
 ```sh
 $ reboot
