@@ -46,25 +46,25 @@ Removes containers created with docker-compose up
 $ sudo groupadd docker
 ```
 
-    Add your user to the docker group.
+Add your user to the docker group.
 
 ```sh
 $ sudo usermod -aG docker $USER
 ```
 
-    Log in to the new docker group (to avoid having to log out / log in again; but if not enough, try to reboot):
+Log in to the new docker group (to avoid having to log out / log in again; but if not enough, try to reboot):
 
 ```sh
 $ newgrp docker
 ```
 
-    Check if docker can be run without root
+Check if docker can be run without root
 
 ```sh
 $ docker run hello-world
 ```
 
-Reboot if still got error
+    Reboot if still got error
 
 ```sh
 $ reboot
