@@ -3,9 +3,9 @@
 This repository contains some examples of how docker is used and a start of the Docker configuration to be used by the project.
 
 # Running
-Install docker and clone the repo then run the command
+Install docker and clone the repo then start the container
 ```sh
-docker-compose up
+docker compose up
 ```
 React app can be accessed by entering localhost:3000 in your web browser
 > NOTE: Windows users might have to remove/comment the "volumes" in docker-compose.yaml file 
@@ -17,28 +17,27 @@ Recommended videos for running a container, understanding Dockerfile and docker-
 |Dockerfile|https://www.youtube.com/watch?v=QePBbG5MoKk|
 |Docker compose|https://www.youtube.com/watch?v=TSySwrQcevM|
 
-> WINDOWS USERS: Docker volumes are used for real time updating files in the container, these apparently have problems working with windows. So WSL is recommended for development in windows. Docker volumes are defined in the docker-compose.yaml file. It should work without WSL if you remove the volumes from docker-compose.yaml file but you might have to create a new container for every change to the code.
+> WINDOWS USERS: Docker volumes are used for real time updating files in the container, these apparently have problems working with windows. So WSL is recommended for development in windows. Docker volumes are defined in the docker-compose.yaml file. It should work without WSL if you remove the volumes from docker-compose.yaml file but you might have to create a new container for every change to the code. This is according to one of the tutorial vidoes, so not verified.
 
 ## Useful commands
 
+Display all currently running containers and some information about them such as container ID
 ```sh
 docker ps
 ```
-Displays all currently running containers and some information about them such as container ID
 
+Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
 ```sh
 docker exec -it "CONTAINER ID" /bin/sh 
 ```
-Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
 
-
+Remove containers created with docker compose up
 ```sh
-docker-compose down 
+docker compose down 
 ```
-Removes containers created with docker-compose up
 
 # Troubleshooting
->Linux: Have to run sudo on every docker command
+##Linux: Have to run sudo on every docker command
 
 Create the docker group if it does not exist
 
