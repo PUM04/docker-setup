@@ -60,15 +60,14 @@ $ newgrp docker
 
 Check if docker can be run without root
 
-```sh
-$ docker run hello-world
-```
+
+  docker run hello-world
+
 
 Reboot if still got error
 
-```sh
-$ reboot
-```
+  reboot
+
 
 
 
