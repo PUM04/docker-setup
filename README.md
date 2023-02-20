@@ -37,7 +37,11 @@ docker compose down
 ```
 
 # Troubleshooting
+<<<<<<< HEAD
 ##Linux: Have to run sudo on every docker command
+=======
+## Linux: Have to run sudo on every docker command
+>>>>>>> 41304ad223fd43fdaf6b635218ac0d0629e758ce
 
 Create the docker group if it does not exist
 
