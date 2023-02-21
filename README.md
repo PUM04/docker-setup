@@ -18,7 +18,7 @@ Recommended videos for running a container, understanding Dockerfile and docker-
 |Docker compose|https://www.youtube.com/watch?v=TSySwrQcevM|
 
 > WINDOWS USERS: Docker volumes are used for real time updating files in the container, these apparently have problems working with windows. So WSL is recommended for development in windows. Docker volumes are defined in the docker-compose.yaml file. It should work without WSL if you remove the volumes from docker-compose.yaml file but you might have to create a new container for every change to the code. **This is according to one of the tutorial vidoes, so not verified.**
-
+>Workaround: Changes come into the container, however the file is not saved inside the container so changes do not take effect. Workaround is to enter the container and manually open the file with vi and enter :wq
 ## Useful commands
 
 Display all currently running containers and some information about them such as container ID
