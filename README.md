@@ -36,6 +36,12 @@ Remove containers created with docker compose up
 ```sh
 docker compose down 
 ```
+Display container IP and config
+```sh
+docker inspect "CONTAINER ID"
+```
+
+
 
 # Troubleshooting
 ## Linux: Have to run sudo on every docker command
@@ -72,7 +78,13 @@ Reboot if still got error
 reboot
 ```
 
+## Error while running docker compose file
+If there is no error with the file itself a pc reboot sometimes works
 
+## cannot acces website on localhost
+try using the network for the docker container instead
 
-
-
+```sh
+docker inspect "CONTAINER ID"
+```
+find the IPAddress for the container and enter "ip:port" in the webbrowser 
