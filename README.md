@@ -5,10 +5,11 @@ This repository contains some examples of how docker is used and a start of the 
 # Running
 Install docker and clone the repo then start the container
 ```sh
-docker compose up
+docker compose up --build
 ```
-React app can be accessed by entering localhost:3000 in your web browser
+React app can be accessed by entering localhost:3000 in your web browser or using the container IP found with docker inspect "CONTAINER ID"
 > NOTE: Windows users might have to remove/comment the "volumes" in docker-compose.yaml file 
+
 # Learning
 Recommended videos for running a container, understanding Dockerfile and docker-compose.yaml
 
