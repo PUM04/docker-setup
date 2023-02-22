@@ -30,7 +30,7 @@ docker ps
 
 Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
 ```sh
-docker exec -it "CONTAINER ID" /bin/sh 
+docker exec -it "CONTAINER ID" bash
 ```
 
 Remove containers created with docker compose up
