@@ -72,7 +72,9 @@ Reboot if still got error
 reboot
 ```
 
+## cannot run docker compose
 
+Reboot computer
 
 
 
