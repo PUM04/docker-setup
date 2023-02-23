@@ -28,7 +28,7 @@ Display all currently running containers and some information about them such as
 docker ps
 ```
 
-Terminal command to enter a container using the "/bin/sh" shell in the linux alpine container
+Terminal command to enter a container using the "bash" shell in the linux alpine container
 ```sh
 docker exec -it "CONTAINER ID" bash
 ```
@@ -42,6 +42,10 @@ Display container IP and config
 docker inspect "CONTAINER ID"
 ```
 
+If there are more than one service in the docker-compose.yaml file a specific container can be created with
+```sh
+docker compose run "SERVICE NAME" bash
+```
 
 
 # Troubleshooting
