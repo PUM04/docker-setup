@@ -2,6 +2,7 @@
 # docker-setup
 This repository contains some examples of how docker is used and a start of the Docker configuration to be used by the project.
 
+
 # Running
 Install docker and clone the repo then start the container
 ```sh
@@ -22,6 +23,10 @@ Recommended videos for running a container, understanding Dockerfile and docker-
 
 >Workaround: Changes to files come into the container, however the file is not saved inside the container so changes do not take effect. Workaround is to enter the container and manually open the file with vi and enter :wq
 ## Useful commands
+
+
+If one does not like using CLI there are docker extensions to vscode and also a docker GUI. 
+
 
 Display all currently running containers and some information about them such as container ID
 ```sh
