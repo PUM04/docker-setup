@@ -1,4 +1,4 @@
-FROM emscripten/emsdk:3.1.32
+FROM node:18
 WORKDIR /app
 
 COPY ./package.json .
