@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import { useWasm } from "./hooks/wasm";
 import { useWasmFile } from "./hooks/wasm";
 // This file needs to be compiled from C++ source with emcc.
-import createIncrementModule from "./increment";
+//import createIncrementModule from "./increment";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +11,7 @@ function App() {
   // Two different ways to load the WebAssembly
   // useWasm uses the Emscripten compiled JS Module together with the WebAssembly file.
   // useWasmFile uses the raw WebAssembly binary.
-  const wasm = useWasm(createIncrementModule);
+  //const wasm = useWasm(createIncrementModule);
   const rawWasm = useWasmFile("increment.wasm");
 
   return (
@@ -29,10 +29,10 @@ function App() {
         <button
           onClick={() => {
             // comment out here to test a different type of WebAssembly call
-            // setCount((count) => rawWasm.increment(count));
-            setCount((count) =>
-              wasm.ccall("increment", "number", ["number"], [count])
-            );
+            setCount((count) => rawWasm.increment(count));
+            // setCount((count) =>
+            //   rawWasm.ccall("increment", "number", ["number"], [count])
+            // );
           }}
         >
           count is {count}
