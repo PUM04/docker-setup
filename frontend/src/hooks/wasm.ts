@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-interface EmscriptenFunctionModule extends EmscriptenModule {
-  ccall: typeof ccall;
+export interface EmscriptenInstantiatedModule extends EmscriptenModule {
+  [x: string | number | symbol]: any;
 }
 
 /**
@@ -12,9 +12,9 @@ interface EmscriptenFunctionModule extends EmscriptenModule {
  * @returns EmscriptenFunctionModule
  */
 export const useWasm = (
-  createModule: EmscriptenModuleFactory<EmscriptenFunctionModule>
-): EmscriptenFunctionModule => {
-  const [wasmModule, setWasmModule] = useState<EmscriptenFunctionModule>();
+  createModule: EmscriptenModuleFactory<EmscriptenInstantiatedModule>
+): EmscriptenInstantiatedModule => {
+  const [wasmModule, setWasmModule] = useState<EmscriptenInstantiatedModule>();
   useEffect(() => {
     const loadWasm = async () => {
       const wasm = await createModule();
@@ -22,7 +22,7 @@ export const useWasm = (
     };
     loadWasm();
   }, [createModule]);
-  return wasmModule as EmscriptenFunctionModule;
+  return wasmModule as EmscriptenInstantiatedModule;
 };
 
 /**
