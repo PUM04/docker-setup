@@ -1,6 +1,5 @@
 #include <emscripten/bind.h>
 
-using namespace emscripten;
 
 // compile this with
 // emcc -lembind -o Calculator.js Calculator.cpp -s EXPORT_ES6=1 -s MODULARIZE=1
@@ -28,6 +27,7 @@ public:
     }
 };
 
+using namespace emscripten;
 EMSCRIPTEN_BINDINGS(calculator)
 {
     function("increment", &increment);

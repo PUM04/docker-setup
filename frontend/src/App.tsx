@@ -3,7 +3,6 @@ import reactLogo from "./assets/react.svg";
 import { useWasm } from "./hooks/wasm";
 // This file needs to be compiled from C++ source with emcc.
 import CalculatorModule from "./cpp/Calculator";
-
 function App() {
   const [count, setCount] = useState(0);
 
@@ -27,7 +26,7 @@ function App() {
               if (count >= 10) {
                 return new calcModule.Calculator().subtract(count, count);
               }
-              return new calcModule.Calculator().add(count, 1);
+              return calcModule.increment(count);
             });
           }}
         >
